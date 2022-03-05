@@ -1,0 +1,15 @@
+nums = []
+total = int
+
+def recur(total):
+            if total == 0:
+                return 0
+            
+            ans = 1000000
+            for c in nums:
+                if amount >= c:
+                    ans = min(ans, recur(total - c) + 1)
+            return ans
+        
+        ans = recur(amount)
+        return ans if ans != 1000000 else -1
