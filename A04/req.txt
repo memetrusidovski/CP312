@@ -1,0 +1,6 @@
+A Mysql or Postgres database for storing all relevant information about each local attraction/’Place’
+Providing feedback to the user in the form of reviews and user ratings 
+Backend system running Node.js and Express framework for handling API requests 
+Prisma js will be used as an ORM to communicate with the database more effectively 
+React will be used to create the frontend and use Axios to make API calls to the backend
+Bootstrap will provide our CSS framework to make styling more efficient

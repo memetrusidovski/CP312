@@ -1,4 +1,4 @@
-import sys 
+import sys
 
 lst = {}
 cn = {}
@@ -14,7 +14,7 @@ with open(sys.argv[1], 'r') as file:
         coins.append(int(i))
         t -= (t // int(i)) * int(i)
         cn[i] = 0
-    
+
     len = len(coins)
     coins.sort(reverse=True)
 
@@ -32,12 +32,11 @@ with open(sys.argv[1], 'r') as file:
                 for j in coins:
                     if (i - j >= 0):
                         lst[str(i)] = min(lst[str(i)], 1 + lst[str(i - j)])
-                        
+
         print(lst[str(total)])
+        print(lst)
 
 
     else:
         print("-1")
         print("There is no solution")
-
- 
