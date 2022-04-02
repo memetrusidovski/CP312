@@ -1,0 +1,22 @@
+//n is the number of edges 
+visited = { }
+
+def dfs(i, edges{}, wurr)
+	if i in visited
+		return false
+
+	visted[ i ] = 1
+	
+	for j in edges[ i ]
+		if not dfs(j, edges, i)
+			return false
+	return true
+
+def isValid(n, edges{}) // edge are in an adjacency list
+	if n <= 1 
+		return true 
+
+	return dfs(0, edges, -1)
+
+
+	
