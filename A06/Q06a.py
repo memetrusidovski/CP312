@@ -1,6 +1,8 @@
 import sys
+import time
 
 ans = []
+start = time.time()
 
 
 def tsp(graph, v, currPos, n, count, cost):
@@ -36,3 +38,5 @@ with open(sys.argv[1], 'r') as file:
     print(min(ans))
 
 
+end = time.time()
+print(end - start)
